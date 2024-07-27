@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://bsxwsdfku5adb"]
+
+[ext_resource type="Texture2D" uid="uid://cgdmtgle7x8ee" path="res://assets/Terrain/Water/Rocks/Rocks_03.png" id="1_4643u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grbvc"]
+atlas = ExtResource("1_4643u")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55clg"]
+atlas = ExtResource("1_4643u")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia7d3"]
+atlas = ExtResource("1_4643u")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig5xf"]
+atlas = ExtResource("1_4643u")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulo0v"]
+atlas = ExtResource("1_4643u")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6x3e"]
+atlas = ExtResource("1_4643u")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsynp"]
+atlas = ExtResource("1_4643u")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2rui"]
+atlas = ExtResource("1_4643u")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2kx1i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grbvc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55clg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ia7d3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ig5xf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulo0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6x3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsynp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2rui")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="WaterRocks" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_2kx1i")
+animation = &"idle"
